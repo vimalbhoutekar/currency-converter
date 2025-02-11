@@ -2,7 +2,8 @@
 
 A modern, responsive web-based currency converter that provides real-time exchange rates using the FreeCurrencyAPI. Built with pure JavaScript, HTML5, and CSS3.
 
-![Currency Converter Screenshot](./screenshot.png) <!-- Add actual screenshot path -->
+![image](https://github.com/user-attachments/assets/8c32d014-ae10-47ad-8f8a-700ff2010e45)
+
 
 ## Features ✨
 
@@ -82,6 +83,8 @@ API_KEY=your_api_key_here
 ```javascript
 ${BASE_URL}&currencies=EUR&base_currency=USD
 ```
+![image](https://github.com/user-attachments/assets/b5251cdd-b521-4fc7-9a61-cdd8b80f06e4)
+
 
 ## Project Structure
 
