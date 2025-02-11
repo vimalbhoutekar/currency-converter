@@ -18,6 +18,7 @@ const toCurrency = document.querySelector(".to select");
 const amountInput = document.querySelector("#input-amount");
 const convertButton = document.querySelector("form button");
 const msg = document.querySelector(".msg");
+const icon = document.querySelector("i");
 
 // Populate dropdowns with currency options
 for (let select of dropdownSelect) {
@@ -80,3 +81,13 @@ convertButton.addEventListener("click", (event) => {
 
 // Convert currency on page load
 document.addEventListener("DOMContentLoaded", convertCurrency);
+
+
+
+// Swap currencies and update flags
+icon.addEventListener("click", () => {
+    [fromCurrency.value, toCurrency.value] = [toCurrency.value, fromCurrency.value];
+    updateFlag(fromCurrency);
+    updateFlag(toCurrency);
+    convertCurrency();
+});
